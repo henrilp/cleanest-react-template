@@ -20,9 +20,9 @@
 *.pem
 
 #avoid PWA productions
-**/public/workbox-*.js
-**/public/sw.js
-**/public/worker-*.js
+/public/workbox-*.js
+/public/sw.js
+/public/worker-*.js
 
 #as we want to use yarn
 package-lock.json 
