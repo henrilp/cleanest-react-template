@@ -18,8 +18,13 @@
 # misc
 .DS_Store
 *.pem
-package-lock.json 
+
+#avoid PWA productions
+/public/sw*
+/public/workbox*
+
 #as we want to use yarn
+package-lock.json 
 
 # debug
 npm-debug.log*
