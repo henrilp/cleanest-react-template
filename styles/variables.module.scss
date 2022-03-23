@@ -7,3 +7,8 @@ $grid-breakpoints: (
 ) !default;
 
 $backgroundColor: #b4bac9;
+
+// // can export variables to js
+// :export {
+//   primaryColor: $primary-color
+// }
