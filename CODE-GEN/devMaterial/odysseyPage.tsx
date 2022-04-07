@@ -1,5 +1,8 @@
 import React from "react";
-// import { KapixContainer as KaContainer } from "@henrilp/kapix-components-react";
+import { KapixContainer as KaContainer } from "@henrilp/test-package";
+import { KaImage } from "components/Elements/KaImage";
+import { KaButton } from "components/Elements/KaButton";
+import { KaText } from "components/Elements/KaText";
 
 export const OdysseyPage = () => {
   return (
@@ -40,7 +43,7 @@ export const OdysseyPage = () => {
               options={{ flexDirection: `row` }}
               xs={{ flexDirection: null }}
             >
-              <KaButton code="k-button-7" options={{ click: kButton7Click }}>
+              <KaButton code="k-button-7" options={{ click: () => null }}>
                 {`jouez gratuitement dès maintenant`}
               </KaButton>
               <KaButton

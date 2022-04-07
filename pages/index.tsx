@@ -4,9 +4,13 @@ import Image from "next/image";
 import styles from "styles/Home.module.scss";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { Generated } from "CODE-GEN/GENERATED/fake";
+import { getGeneratedReact } from "CODE-GEN";
+import { writeReact } from "CODE-GEN/nodeUtils";
 
 const Home: NextPage = () => {
   const { t } = useTranslation();
+  console.log({ code: getGeneratedReact() });
   return (
     <div className={styles.container}>
       <Head>
@@ -16,9 +20,21 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <h1 className={styles.title}>Welcome to Kapix React</h1>
+        <hr style={{ height: "5rem" }} />
+
+        <p
+          style={{
+            whiteSpace: "pre-wrap",
+            backgroundColor: "#555555",
+            color: "white",
+            padding: "1rem",
+          }}
+        >
+          {getGeneratedReact()}
+        </p>
+
+        <hr style={{ height: "5rem" }} />
 
         <h2>LANG = {t("lang")}</h2>
 
@@ -74,6 +90,7 @@ const Home: NextPage = () => {
   );
 };
 export async function getStaticProps({ locale }: { locale: string }) {
+  writeReact();
   return {
     props: {
       // allows to give only the appropriate language to browser (SSG)
