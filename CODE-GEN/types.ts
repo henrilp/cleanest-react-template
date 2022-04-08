@@ -136,7 +136,7 @@ export interface IVirtualElement {
   field: KeyValuePair;
   options: SerializableOptions;
 
-  data: any;
+  data?: any; // is "data" optional or always there
   parentData?: any;
 
   label?: string;

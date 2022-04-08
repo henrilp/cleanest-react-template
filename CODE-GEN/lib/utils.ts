@@ -1,5 +1,3 @@
-import { tabValue } from "./constants";
-
 export const upperFirstLetter = (str: string | undefined): string => {
   if (!str) return "";
   if (str.length === 0) return str;
@@ -22,12 +20,3 @@ export function normalizedJsName(label: string) {
   return camelCase(label);
   // return lowerFirstLetter(pascalCase(label))
 }
-
-export const strReactPrefix = `import React from "react";
-import { KaText } from "components/Elements/KaText";
-
-export const Generated = ()=>{
-  return (`;
-
-export const strReactSuffix = `  );
-}`;

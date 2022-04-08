@@ -4,13 +4,12 @@ import Image from "next/image";
 import styles from "styles/Home.module.scss";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import { Generated } from "CODE-GEN/GENERATED/fake";
-import { getGeneratedReact } from "CODE-GEN";
-import { writeReact } from "CODE-GEN/nodeUtils";
+import { generateScript } from "CODE-GEN";
+import { writeReact } from "CODE-GEN/lib/nodeUtils";
+import { Generated } from "CODE-GEN/GENERATED/hello";
 
 const Home: NextPage = () => {
   const { t } = useTranslation();
-  console.log({ code: getGeneratedReact() });
   return (
     <div className={styles.container}>
       <Head>
@@ -22,17 +21,28 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to Kapix React</h1>
         <hr style={{ height: "5rem" }} />
-
-        <p
+        <div
           style={{
-            whiteSpace: "pre-wrap",
-            backgroundColor: "#555555",
-            color: "white",
-            padding: "1rem",
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
           }}
         >
-          {getGeneratedReact()}
-        </p>
+          <p
+            style={{
+              whiteSpace: "pre-wrap",
+              backgroundColor: "#555555",
+              color: "white",
+              padding: "1rem",
+              flex: 1,
+            }}
+          >
+            {generateScript()}
+          </p>
+          <div style={{ flex: 1 }}>
+            <Generated />
+          </div>
+        </div>
 
         <hr style={{ height: "5rem" }} />
 
