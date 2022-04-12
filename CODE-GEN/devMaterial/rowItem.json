@@ -1,0 +1,170 @@
+{
+  "field": {
+    "label": "Unify flex row",
+    "type": "Object",
+    "widget": "container",
+    "flexDirection": "row",
+    "h": null,
+    "heightUnit": "px",
+    "template": "default",
+    "w": 100,
+    "widthUnit": "%"
+  },
+  "type": "container",
+  "items": [{
+      "id": "8XfNHC5W5uLomgcym7Pvhf",
+      "field": {
+        "order": 5,
+        "label": "Button 1",
+        "type": "String",
+        "widget": "button",
+        "template": "default",
+        "h": null,
+        "heightUnit": "px",
+        "w": 100,
+        "widthUnit": "%"
+      },
+      "options": {
+        "display": {
+          "default": {
+            "md": {
+              "innerBackgroundColor": "{\"Angle\":90,\"Colors\":[\"#141412BF\"]}",
+              "boxShadow": [{
+                  "br": 8,
+                  "c": "rgba(0, 0, 0, 0.2)",
+                  "h": 0,
+                  "sr": 0,
+                  "v": 1
+                },
+                {
+                  "br": 4,
+                  "c": "rgba(0, 0, 0, 0.14)",
+                  "h": 0,
+                  "sr": 0,
+                  "v": 3
+                },
+                {
+                  "br": 3,
+                  "c": "rgba(0, 0, 0, 0.12)",
+                  "h": 0,
+                  "sr": -2,
+                  "v": 3
+                }
+              ],
+              "borderRadius": null,
+              "border": [
+                2
+              ],
+              "borderColor": "#bfa251",
+              "margin": [
+                13,
+                5,
+                13,
+                5
+              ],
+              "order": 3,
+              "state:hover": {
+                "innerBackgroundColor": "{\"Angle\":90,\"Colors\":[\"#ab8343ff\",\"#f3ead2ff\",\"#c8a773ff\"]}",
+                "color": "#000000FF",
+                "innerOpacity": 96
+              },
+              "color": "#FFFFFFFF",
+              "textTransform": "uppercase",
+              "fontFormat": [
+                "bold"
+              ],
+              "fontSize": 14,
+              "transitions": {
+                "innerBackgroundColor": {
+                  "duration": 0.1,
+                  "easing": "ease"
+                }
+              }
+            }
+          }
+        }
+      },
+      "data": "<p>jouez gratuitement dès maintenant</p>"
+    },
+    {
+      "id": "qzQkacgovRiAfB7NKgrkgV",
+      "field": {
+        "order": 4,
+        "label": "Button 1",
+        "type": "String",
+        "widget": "button",
+        "template": "default",
+        "h": null,
+        "heightUnit": "px",
+        "w": 100,
+        "widthUnit": "%"
+      },
+      "options": {
+        "display": {
+          "default": {
+            "md": {
+              "borderRadius": null,
+              "borderColor": "#bfa251",
+              "margin": [
+                13,
+                5,
+                13,
+                5
+              ],
+              "color": [{
+                "type": "$B-A",
+                "path": "theme.focusColor"
+              }],
+              "fontSize": 14,
+              "textTransform": "uppercase",
+              "fontFormat": [
+                "bold"
+              ],
+              "textShadow": [{
+                  "br": 5,
+                  "c": "rgba(0, 0, 0, 0.2)",
+                  "h": 0,
+                  "sr": -3,
+                  "v": 5
+                },
+                {
+                  "br": 10,
+                  "c": "rgba(0, 0, 0, 0.14)",
+                  "h": 0,
+                  "sr": 1,
+                  "v": 8
+                },
+                {
+                  "br": 14,
+                  "c": "rgba(0, 0, 0, 0.12)",
+                  "h": 0,
+                  "sr": 2,
+                  "v": 3
+                }
+              ],
+              "buttonIcon": "fab fa-youtube"
+            }
+          }
+        }
+      },
+      "data": "<p>&nbsp; regarder la bande annonce</p>"
+    }
+  ],
+  "options": {
+    "display": {
+      "default": {
+        "md": {
+          "hAlign": "center",
+          "maxW": 957,
+          "margin": [
+            26,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  },
+  "id": "dHQu7QmaaDommfGBjdaMmh"
+}
